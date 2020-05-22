@@ -1,0 +1,8 @@
+<h1>Houses For Rent</h1>
+
+<ul *ngIf="houses">
+  <li *ngFor="let house of houses">
+    <p>{{ house.street}}, {{ house.city }}</p><br>
+    <p>The House has {{ house.rooms }} rooms and {{ house.parking_spots }}</p>
+  </li>
+</ul>
